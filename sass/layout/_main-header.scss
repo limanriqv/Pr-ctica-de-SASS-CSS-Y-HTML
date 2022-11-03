@@ -1,0 +1,292 @@
+.section-cards__header{
+    background: linear-gradient(#00b7ea, #009ec3);
+    color: #ebf0f3;
+    font-size: 0.9em;
+    text-align: center;
+    flex-basis: 10%;
+    padding: .04em;
+
+
+}
+
+.main-header {
+    display: flex;
+    flex-wrap: wrap;
+
+   
+   
+
+    &__logo-container {
+        
+        flex-basis: 10%;
+        padding: .05em;
+
+        @media (min-width: 320px) {
+            flex-basis: 9.5%;
+            padding: .05em;
+           
+        }
+
+        @media (min-width: 768px) {
+            width: 100px;
+            height: 130px;
+            flex-basis: 9.3%;
+            padding: .05em;
+        }
+    }
+
+   
+
+    &__logo-container-img {
+        height: 100%;
+        width: 100%;
+
+    } 
+    
+
+    
+    &__search-form-container {
+        padding: 1em;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        background: linear-gradient(#00b7ea, #009ec3);
+        
+
+        @media (min-width:320px) {
+            height: 50px;
+            width: 50%;
+            padding-top: 7px;
+            background: linear-gradient(#00b7ea, #009ec3);
+        }
+
+        @media (min-width: 768px) {
+            background: linear-gradient(#00b7ea, #009ec3);
+            order: 2;
+            flex-basis: 5em;
+            flex-grow: 0;
+            flex-shrink: 1;
+            height: 130px;
+            padding-top: 2em;
+        }
+        
+    
+
+        &__input {
+            background-color: #ceeff4;
+            border: none;
+            border-radius: .3em 0 0 .3em;
+            padding: .3em;
+        
+                @media (min-width: 320px) {
+                    width: 90px;
+                }
+        
+                @media (min-width: 768px) {
+                    width: 80px;
+                    height: 40px;
+                }
+        
+                @media (min-width: 1024px) {
+                    width: auto;
+                }
+
+                &:focus {
+                    background-color: #eff9f1;
+                    outline: none;
+                }
+
+                &::placeholder {
+                    color: #727EE0;
+                }
+            }
+    
+        &__button {
+            background-color: #a7d6e8;
+            border: solid 2px #3071ea;
+            padding: auto;
+            border: none;
+            
+    
+
+            &:hover,
+            &:focus {
+                background: linear-gradient(to right bottom, #1c4ded 20%, #647CF5, #4FC9FB 80%);
+
+                color: #c8ebf5;
+           
+            }
+
+                @media (min-width: 768px) {
+                    height: 40px;
+                    
+                }
+        }
+    }
+    
+    
+    &__cart-button-container {
+        position: relative;
+        height: 130px;
+        padding: 2em;
+        flex-basis: 8%;
+        &:hover,
+        &:focus {
+            background: linear-gradient(to right bottom, #1c4ded 20%, #647CF5, #4FC9FB 80%);}
+        
+       
+
+        @media (min-width:320px) and (max-width: 767px) {
+            height: 50px;
+            padding: .1em;
+            background: linear-gradient(#00b7ea, #009ec3);
+
+            &:hover,
+            &:focus {
+                background: linear-gradient(to right bottom, #1c4ded 20%, #647CF5, #4FC9FB 80%);}
+                    }
+
+        @media (min-width: 768px) {
+            order: 3;
+            background: linear-gradient(#00b7ea, #009ec3);
+
+            &:hover,
+            &:focus {
+                background: linear-gradient(to right bottom, #1c4ded 20%, #647CF5, #4FC9FB 80%);}
+            
+            }
+    
+
+        &__img {
+            padding: .0.3em;
+            width: 100%;
+            top: 1px;
+            &:hover,
+            &:focus {
+                background: linear-gradient(to right bottom, #1c4ded 20%, #647CF5, #4FC9FB 80%);}
+
+            @media (min-width:320px) and (max-width: 900px) {
+                position: relative;
+                bottom: 5px;
+                left: 3px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+
+    
+    &__hamburger-button-container {
+        background: rgb(72, 185, 191);
+        padding: 1em;
+        height: 50px;
+        &:hover,
+        &:focus {
+            background: linear-gradient(to right bottom, #1c4ded 20%, #647CF5, #4FC9FB 80%);}
+
+        
+
+        @media (min-width: 768px) {
+            display: none;
+            &:hover,
+            &:focus {
+            background: linear-gradient(to right bottom, #1c4ded 20%, #647CF5, #4FC9FB 80%);}
+            }   
+        
+    }
+
+    &__main-nav-container {
+        flex-basis: 100%;
+        display: none;
+        flex-grow: 1;
+
+        @media (min-width: 768px) {
+            flex-basis: auto;
+            order: 1;
+            display: block;
+    
+        }
+    }
+
+    .main-nav {
+        &__list {
+            margin: 0 0 30px 0 ;
+            padding: 0px;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: linear-gradient(#00b7ea, #009ec3);
+            @media (min-width: 768px) {
+                flex-direction: row;
+                width: 100%;
+                margin:0;
+                
+            }
+        }
+    
+        &__item {
+            text-align: center;
+            
+        }
+    
+        &__link {
+            background: linear-gradient(#00b7ea, #009ec3);
+            color: #ebf0f3;
+            font-size: 1.5em;
+            text-decoration:solid;
+            padding:0.8em;
+            line-height: 40px;
+            
+
+            &:hover {
+            background: linear-gradient(to right bottom, #1c4ded 20%, #647CF5, #4FC9FB 80%);
+            
+            outline: none;
+            }
+        
+            @media (min-width: 320px) {
+                display: block;
+                background: linear-gradient(#00b7ea, #009ec3);
+                height: 60px;
+            }
+
+        
+            @media (min-width: 768px) {
+                
+                height: 130px;
+                width:100%;
+                padding: 0 30px;
+                line-height: 100px;
+                
+
+                
+            }
+        
+           
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

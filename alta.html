@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <input type="checkbox" class="main-nav-toggle" id="main-nav-toggle">
+    <header class="main-header">
+        <div class="main-header__logo-container">
+
+            <div class="main-header__logo-container-logo">
+
+                <div><img class="main-header__logo-container-img" src="img/logo.png" alt="Logo"></div>
+                
+            </div>
+        </div>
+
+        <div class="main-header__search-form-container">
+            <input class="main-header__search-form-container__input" type="text" placeholder="Buscar">
+            <input type="button" class="main-header__search-form-container__button" value="Buscar">
+        </div>
+
+        <div class="main-header__cart-button-container">
+            <img class="main-header__cart-button-container__img" src="img/carrito.png" alt="Carrito de compras">
+        </div>
+
+        <div class="main-header__hamburger-button-container">
+
+            <label class="hamburger-button" for="main-nav-toggle" title="Alternar la barra de navegacion">
+                <span class="hamburger-button__top-bread"></span>
+                <span class="hamburger-button__meat"></span>
+                <span class="hamburger-button__bottom-bread"></span>
+            </label>
+        </div>
+        <div class="main-header__main-nav-container">
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+
+                        <a href="index.html" class="main-nav__link">Inicio</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="alta.html" class="main-nav__link">Alta</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="contacto.html" class="main-nav__link">Contacto</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="nosotros.html" class="main-nav__link">Nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-alta">
+            <header class="section-form__header">
+                <h1>Formulario de alta</h1>
+                
+            </header>
+            <div class="form-container">
+
+                <form action="algun-lugar.html" autocomplete="off"> 
+                    <div class="alta-form"> 
+                        <div class="alta-form__name"> 
+                            <label class="alta-form__name-label" for="nombre">Nombre</label>
+                            <input class="alta-form__name-input" name="nombre" type="text" autofocus >
+                            <div class="error-detalle"></div>
+                        </div>
+
+                        <div class="alta-form__price"> 
+                            <label class="alta-form__price-label" for="price">Precio</label>
+                            <input class="alta-form__price-input" name="price" type="text" id="price" value="">
+                            <div class="error-detalle"></div>
+                        </div>
+
+                        <div class="alta-form__stock">
+                            <label class="alta-form__stock-label" for="stock">Stock</label>
+                            <div class="alta-form__stock__cheched">
+                                <input type="radio" id="Sí" name="stock" value="Sí" required checked="checked">
+                                <label for="Sí">Sí</label>
+                                <input type="radio" id="No" name="stock" value="No">
+                                <label for="No">No</label>
+                            </div>
+                        </div>
+
+                        <div class="alta-form__brand">
+                            <label class="alta-form__brand-label" for="Marca">Marca</label>
+                            <input class="alta-form__brand-input" required id="Marca" type="text">
+                            <div class="error-detalle"></div>
+                        </div>
+
+                        <div class="alta-form__category">
+                            <label class="alta-form__category-label" for="category">Categoría</label>
+                            <input class="alta-form__category-input" required id="Categoría" type="text">
+                            <div class="error-detalle"></div>
+                        </div>
+
+    
+                        <div class="alta-form__short-description">
+                            <label class="alta-form__short-description-label" for="short-description">Descripción corta</label>
+                            <textarea class="alta-form__short-description-textarea" name="short-description" id="short-description" cols="10" rows="1"></textarea>
+                            <div class="error-detalle"></div>
+                        </div>
+
+                        <div class="alta-form__long-description">
+                            <label class="alta-form__long-description-label" for="long-description">Descripción larga</label>
+                            <textarea class="alta-form__long-description-textarea" name="long-description" id="long-description" cols="20" rows="2"></textarea>
+                            <div class="error-detalle"></div>
+                        </div>
+
+                        <div class="alta-form__shipping">
+                            <label class="alta-form__shipping-label" for="shipping">Envío gratis</label>
+                            <div class="alta-form__shipping-cheched">
+                                <input type="radio" id="Sí" name="shipping" value="" checked="checked">
+                                <label for="Sí">Si</label>
+                                <input type="radio" id="No" name="shipping" value="">
+                                <label for="No">No</label>
+                        </div>
+
+                        <div class="alta-form__age-from">
+                            <label class="alta-form__age-from-label" for="edad">Edad desde</label>
+                            <input class="alta-form__age-from-input" required id="edad" type="text">
+                            <div class="error-detalle"></div>
+                        </div>
+
+                        <div class="alta-form__age-up-to">
+                            <label class="alta-form__age-up-to-label" for="edad">Edad hasta</label>
+                            <input class="alta-form__age-up-to-input" required id="edad" type="text">
+                            <div class="error-detalle"></div>
+                        </div>
+                    
+                        <div class="alta-form__photo">                
+                            <label class="alta-form__photo-label" for="photo">Foto</label>
+                            <input class="alta-form__photo-input" type="file" name="photo" id="photo">
+                            <div class="error-detalle"></div>
+                        
+                        </div>
+
+                        <div class="alta-form__button">
+                            <button type="submit" class="alta-form__button__submit">Enviar</button>
+                        </div>
+
+                    </div>
+                </form>    
+        </main>
+
+
+
+
+        <footer class="main-footer">
+            <div class="main-footer__img">
+                <img class="main-footer__img__logo" src="img/logo-footer.png" alt="">
+            </div>
+            <div class="main-footer__text">
+                <p>Dirección: Valentín Gómez 3222-Bs.As. - CP: 1888.</p> 
+                <p>Contacto: (11) 3422-4321.</p> <br>
+                <p>Copyright 2022 © Juguetería Cósmica. <br>
+                Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    
+        <script src="js/main.js"></script>
+        
+</body>
+</html>

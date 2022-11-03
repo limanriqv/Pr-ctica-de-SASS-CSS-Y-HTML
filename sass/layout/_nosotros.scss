@@ -1,0 +1,36 @@
+.section-nosotros__header{
+    background: linear-gradient(#00b7ea, #009ec3);
+    color: #ebf0f3;
+    font-size: 0.9em;
+    text-align: center;
+    flex-basis: 10%;
+    padding: .04em;
+
+}
+
+.nosotros-container{
+    display: flex;
+    flex:basis;
+    flex-direction:column;
+    background-color: #287eef;
+    background-position: right;
+    width: 650px;
+    padding: 1em;
+    border: solid 5px #3b03f3;
+    border-radius: .10em;
+    color: #9fe3f6;
+    font-size:21px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+
+    @media (max-width: 630px) {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 95%;
+    }
+
+
+    
+}

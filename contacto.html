@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <input type="checkbox" class="main-nav-toggle" id="main-nav-toggle">
+    <header class="main-header">
+        <div class="main-header__logo-container">
+
+            <div class="main-header__logo-container-logo">
+
+                <div><img class="main-header__logo-container-img" src="img/logo.png" alt="Logo"></div>
+                
+            </div>
+        </div>
+
+        <div class="main-header__search-form-container">
+            <input class="main-header__search-form-container__input" type="text" placeholder="Buscar">
+            <input type="button" class="main-header__search-form-container__button" value="Buscar">
+        </div>
+
+        <div class="main-header__cart-button-container">
+            <img class="main-header__cart-button-container__img" src="img/carrito.png" alt="Carrito de compras">
+        </div>
+
+        <div class="main-header__hamburger-button-container">
+
+            <label class="hamburger-button" for="main-nav-toggle" title="Alternar la barra de navegacion">
+                <span class="hamburger-button__top-bread"></span>
+                <span class="hamburger-button__meat"></span>
+                <span class="hamburger-button__bottom-bread"></span>
+            </label>
+        </div>
+        <div class="main-header__main-nav-container">
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+
+                        <a href="index.html" class="main-nav__link">Inicio</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="alta.html" class="main-nav__link">Alta</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="contacto.html" class="main-nav__link">Contacto</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="nosotros.html" class="main-nav__link">Nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+
+    <main>
+        <section class="section-contacto">
+            <header class="section-form__header">
+                <h1>Formulario de contacto</h1>
+                <div></div>
+            </header>
+
+            <form action="algun-lugar.html" autocomplete="off"> 
+                <div class="contact-form"> 
+                    <div class="contact-form__name"> 
+                        <label class="contact-form__name-label" for="nombre">Nombre</label>
+                        <input class="contact-form__name-input" name="nombre" type="text" autofocus >
+                        <div class="error-detalle"></div>
+                    </div>
+
+                    <div class="contact-form__email">
+                        <label class="contact-form__email-label" for="email">E-mail:<span class="contact-form__necesary"></label>
+                        <input class="contact-form__email-input" type="email" name="email" id="email" value="">
+                        <div class="error-detalle"></div>
+                    </div>
+
+                    
+                    <div class="contact-form__comments">
+                        <label class="contact-form__comments-label" for="comments">Comentarios</label>
+                        <textarea class="contact-form__comments-textarea" name="comments" id="comments" cols="20" rows="3"></textarea>
+                        <div class="error-detalle"></div>
+                    </div>
+
+                    <div class="contact-form__button">
+                        <input class="contact-form__button__input" type="submit">
+                    <div class="error-detalle"></div>
+                </form>    
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <div class="main-footer__img">
+                <img class="main-footer__img__logo" src="img/logo-footer.png" alt="">
+            </div>
+            <div class="main-footer__text">
+                <p>Dirección: Valentín Gómez 3222-Bs.As. - CP: 1888.</p> 
+                <p>Contacto: (11) 3422-4321.</p> <br>
+                <p>Copyright 2022 © Juguetería Cósmica. <br>
+                Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    
+        <script src="js/main.js"></script>
+        
+    </body>
+    </html>
+
+    
